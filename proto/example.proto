@@ -1,0 +1,13 @@
+syntax = "proto3";
+package protodef;
+option go_package = "pkg/protodef";
+
+message HugeMessage {
+    // omitted
+    bytes data = 1;
+}
+
+message Request {
+    string name = 1;
+    HugeMessage payload = 2;
+}
